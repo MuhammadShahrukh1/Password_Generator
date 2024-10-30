@@ -1,0 +1,51 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.passwordSection{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0px;
+    gap: 2;
+}
+
+.passwordSection input{
+    width: calc(100%);
+    border: 1px solid #C5D6E0;
+    background-color: #fff;
+    border-radius: 28px;
+    box-shadow: inset 0px 2px 4px rgba(7, 29, 43, 0.12);
+    padding: 12px 28px;
+    line-height: 1.875rem;
+    font-size: 1.125rem;
+    text-overflow: ellipsis;
+}
+
+.passwordSection button{
+    border-radius: 40px;
+    padding: 0px 28px;
+    font-size: 15px;
+    font-weight: 700;
+    /* letter-spacing: 1px; */
+    box-shadow: 0px 8px 32px -16px rgba(0,112,246,0.32),0px 16px 32px -16px rgba(7,29,43,0.32);
+    height: 56px;
+    /* gap: 14px; */
+    line-height: 15px;
+    margin-left: 10px;
+}
+
+.strength button{
+    width: 40px;
+    height: 40px;
+}
+.section-py{
+    padding: 112px 0px;
+    background-color: rgb(255,241,229);
+}
+.card1{
+    border-radius: 30px !important;
+    border: 1px solid rgb(255,221,191);
+}
