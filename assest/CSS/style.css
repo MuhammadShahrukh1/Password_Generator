@@ -9,9 +9,15 @@
     align-items: center;
     justify-content: space-between;
     margin: 20px 0px;
+    position: relative;
     gap: 2;
 }
-
+.passwordSection img{
+    position: absolute;
+    width: 20px;
+    left: calc(100% - 210px);
+    cursor: pointer;
+}
 .passwordSection input{
     width: calc(100%);
     border: 1px solid #C5D6E0;

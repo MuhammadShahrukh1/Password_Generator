@@ -25,30 +25,31 @@
                 <div class="col-sm-12 col-md-12 col-lg-6">
                     <div class="passwordSection mb-5">
                         <input type="text" id="password">
+                        <img src="./assest/images/copy.png" alt="" onclick="copy()">
                         <button class="btn btn-primary" onclick="generatePassword()">Generate Password</button>
                     </div>
                     <div class="strength d-flex justify-content-center align-items-center">
-                        <h4>Password Length : <span>15</span></h4>
-                        <button class="rounded-circle btn btn-light shadow ms-4 me-4"> - </button>
-                        <input type="range" class="w-50">
-                        <button class="rounded-circle btn btn-light shadow ms-4"> + </button>
+                        <h4>Password Length : <span id="passwordLength">15</span></h4>
+                        <button class="rounded-circle btn btn-light shadow ms-4 me-4 fw-bold"> - </button>
+                        <input type="range" class="w-50" min="0" max="50" id="slider" oninput="updateLength()">
+                        <button class="rounded-circle btn btn-light shadow ms-4 fw-bold"> + </button>
                     </div>
                     <div class="char d-flex justify-content-center align-items-center mt-5">
                         <h5>Character <br>Used : </h5>
                         <div class="form-check form-check-inline">
-                            <input type="checkbox" class="form-check-input ms-1 d-inline-block fs-5">
+                            <input type="checkbox" id="upperCase" class="form-check-input ms-1 d-inline-block fs-5">
                             <label for="" class="form-check-label ms-1 fw-bold">ABC</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input type="checkbox" class="form-check-input ms-1 d-inline-block fs-5">
+                            <input type="checkbox" id="lowerCase" class="form-check-input ms-1 d-inline-block fs-5">
                             <label for="" class="form-check-label ms-1 fw-bold">abc</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input type="checkbox" class="form-check-input ms-1 d-inline-block fs-5">
+                            <input type="checkbox" id="number" class="form-check-input ms-1 d-inline-block fs-5">
                             <label for="" class="form-check-label ms-1 fw-bold">123</label>
                         </div>
                         <div class="form-check form-check-inline">
-                            <input type="checkbox" class="form-check-input ms-1 d-inline-block fs-5">
+                            <input type="checkbox" id="symbol" class="form-check-input ms-1 d-inline-block fs-5">
                             <label for="" class="form-check-label ms-1 fw-bold">$#&</label>
                         </div>
                     </div>
