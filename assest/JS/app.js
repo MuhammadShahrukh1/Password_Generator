@@ -24,6 +24,7 @@ function copy(){
 }
 
 function updateLength(){
+    document.getElementById('password').value = '';
     let slider = document.getElementById('slider');
     let updateLength = document.getElementById('passwordLength');
     console.log(updateLength.textContent)
